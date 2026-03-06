@@ -1,0 +1,3 @@
+Module: https://tfhub.dev/google/yamnet/1
+Download Time: 2026-03-06 19:57:19.384395
+Downloader Hostname: LAPTOP-17TBTQFC (PID:35540)
