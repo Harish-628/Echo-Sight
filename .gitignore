@@ -3,3 +3,9 @@ __pycache__/
 .env
 /evidence_logs/*.jpg
 /evidence_logs/*.txt
+*.mp4
+*.wav
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/
