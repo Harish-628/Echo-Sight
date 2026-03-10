@@ -12,7 +12,7 @@ from core.vision_engine import VisionEngine
 from core.audio_engine import AudioEngine
 from core.threat_engine import ThreatEngine
 
-app = FastAPI(title="Echo-Sight Multi-Modal Security System")
+app = FastAPI(title="Echo-Sight Multi-Modal Security System", version="1.0.0")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 vision_engine = VisionEngine()

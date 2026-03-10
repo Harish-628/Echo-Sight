@@ -1,5 +1,6 @@
 # 👁️ Project Echo-Sight | Multi-Modal Security Intelligence 🛡️🔊
 
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/your-username/Echo-Sight/)
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-005863?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-FF4B11?style=for-the-badge&logo=ultralytics&logoColor=white)](https://ultralytics.com/)
