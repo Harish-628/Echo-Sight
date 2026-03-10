@@ -132,10 +132,20 @@ document.addEventListener("DOMContentLoaded", () => {
                             alertText = data.active_alerts[0]; // say the first alert
                         }
 
-                        const msg = new SpeechSynthesisUtterance(`Warning! ${alertText}`);
-                        msg.rate = 1.1;
-                        msg.pitch = 0.9;
-                        window.speechSynthesis.speak(msg);
+                        try {
+                            const msg = new SpeechSynthesisUtterance(`Warning! ${alertText}`);
+                            msg.rate = 1.1;
+                            msg.pitch = 0.9;
+
+                            msg.onerror = (event) => {
+                                console.warn("Speech Synthesis Error (Likely Network):", event.error);
+                                // Fallback: Visual indicator or silent log
+                            };
+
+                            window.speechSynthesis.speak(msg);
+                        } catch (e) {
+                            console.error("Critical Speech Engine Failure:", e);
+                        }
 
                         alarmSound.play().catch(e => console.log("Alarm play blocked", e));
                     }
